@@ -1,8 +1,8 @@
 {
 	"meta": {
-		"title": "YYsuni",
-		"description": "YYsuni 的个人博客，记录前端开发、探索、笔记。前端 UI 更新代码仓库。",
-		"username": "Suni"
+		"title": "Feng",
+		"description": "Feng 的个人博客，记录生活。",
+		"username": "Feng"
 	},
 	"theme": {
 		"colorBrand": "#de4331",
@@ -24,49 +24,43 @@
 	],
 	"artImages": [
 		{
-			"id": "cat",
-			"url": "/images/art/cat.png"
+			"id": "35a3751a376b3dbc",
+			"url": "/images/art/35a3751a376b3dbc.png"
 		},
 		{
-			"id": "a46372ff45bc5524",
-			"url": "/images/art/a46372ff45bc5524.jpg"
+			"id": "a641e6da712d0695",
+			"url": "/images/art/a641e6da712d0695.png"
+		},
+		{
+			"id": "1184755adbbc9632",
+			"url": "/images/art/1184755adbbc9632.webp"
 		}
 	],
-	"currentArtImageId": "a46372ff45bc5524",
+	"currentArtImageId": "35a3751a376b3dbc",
 	"backgroundImages": [
 		{
 			"id": "",
 			"url": ""
-		}
-	],
-	"currentBackgroundImageId": "",
-	"socialButtons": [
-		{
-			"id": "github",
-			"type": "github",
-			"value": "https://github.com/yysuni",
-			"label": "Github",
-			"order": 3
 		},
 		{
-			"id": "juejin",
-			"type": "juejin",
-			"value": "https://juejin.cn/user/2427311675422382",
-			"label": "稀土掘金",
-			"order": 2
+			"id": "35a3751a376b3dbc",
+			"url": "/images/background/35a3751a376b3dbc.png"
 		},
 		{
-			"id": "email",
-			"type": "email",
-			"value": "yysuni1001@gmail.com",
-			"label": "",
-			"order": 1
+			"id": "a641e6da712d0695",
+			"url": "/images/background/a641e6da712d0695.png"
+		},
+		{
+			"id": "1184755adbbc9632",
+			"url": "/images/background/1184755adbbc9632.webp"
 		}
 	],
+	"currentBackgroundImageId": "35a3751a376b3dbc",
+	"socialButtons": [],
 	"clockShowSeconds": false,
-	"summaryInContent": false,
-	"isCachePem": false,
-	"hideEditButton": false,
+	"summaryInContent": true,
+	"isCachePem": true,
+	"hideEditButton": true,
 	"currentHatIndex": 3,
 	"hatFlipped": false
 }
