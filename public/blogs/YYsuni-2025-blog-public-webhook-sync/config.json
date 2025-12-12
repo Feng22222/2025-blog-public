@@ -1,0 +1,9 @@
+{
+  "title": "YYsuni-2025-blog-public 本地部署（宝塔面板...）+ 使用Webhook实现本地实时同步Github仓库",
+  "tags": [
+    "YYsuni-2025-blog-public"
+  ],
+  "date": "2025-12-10",
+  "summary": "2025 Blog 本地服务器部署与Webhook自动更新教程",
+  "cover": "/blogs/YYsuni-2025-blog-public-webhook-sync/02909f252ac1a89f.webp"
+}
