@@ -7,7 +7,7 @@
 	"theme": {
 		"colorBrand": "#de4331",
 		"colorPrimary": "#4E3F42",
-		"colorSecondary": "#7b888e",
+		"colorSecondary": "#000000",
 		"colorBrandSecondary": "#FCC841",
 		"colorBg": "#eeeeee",
 		"colorBorder": "#ffffff",
@@ -55,12 +55,12 @@
 			"url": "/images/background/1184755adbbc9632.webp"
 		}
 	],
-	"currentBackgroundImageId": "35a3751a376b3dbc",
+	"currentBackgroundImageId": "a641e6da712d0695",
 	"socialButtons": [],
 	"clockShowSeconds": false,
 	"summaryInContent": true,
 	"isCachePem": true,
 	"hideEditButton": true,
-	"currentHatIndex": 3,
-	"hatFlipped": false
+	"currentHatIndex": 24,
+	"hatFlipped": true
 }
