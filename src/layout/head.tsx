@@ -5,6 +5,11 @@ export default function Head() {
 		<head>
 			<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 			<link rel='manifest' href='/manifest.json' />
+			<meta name='theme-color' content='#000000' />
+			<meta name='apple-mobile-web-app-capable' content='yes' />
+			<meta name='apple-mobile-web-app-status-bar-style' content='black' />
+			<meta name='apple-mobile-web-app-title' content='Feng' />
+			<link rel='apple-touch-icon' href='/images/avatar.png' />
 
 			<link rel='icon' href='/favicon.png' />
 
@@ -21,6 +26,21 @@ export default function Head() {
           gtag('js', new Date());
 
           gtag('config', 'G-ZNSFR7C9PM');
+        `}
+			</Script>
+			<Script id='service-worker-registration'>
+				{`
+          if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/sw.js')
+                .then(registration => {
+                  console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                  console.error('Service Worker registration failed:', error);
+                });
+            });
+          }
         `}
 			</Script>
 		</head>
