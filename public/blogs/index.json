@@ -1,5 +1,15 @@
 [
   {
+    "slug": "web-notepad-pro",
+    "title": "网页记事本增强版",
+    "tags": [],
+    "date": "2025-12-14T08:35",
+    "summary": "",
+    "cover": "/blogs/web-notepad-pro/7e8f26b5f386c6ee.png",
+    "hidden": false,
+    "category": ""
+  },
+  {
     "slug": "YYsuni-2025-blog-public-webhook-sync",
     "title": "YYsuni-2025-blog-public 本地部署（宝塔面板...）+ 使用Webhook实现本地实时同步Github仓库",
     "tags": [
