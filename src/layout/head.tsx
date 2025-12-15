@@ -5,9 +5,9 @@ export default function Head() {
 		<head>
 			<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 			<link rel='manifest' href='/manifest.json' />
-			<meta name='theme-color' content='#ffffff' />
+			<meta name='theme-color' content='rgb(42, 72, 243)' />
 			<meta name='apple-mobile-web-app-capable' content='yes' />
-			<meta name='apple-mobile-web-app-status-bar-style' content='default' />
+			<meta name='apple-mobile-web-app-status-bar-style' content='light-content' />
 			<meta name='apple-mobile-web-app-title' content='Feng' />
 			<link rel='apple-touch-icon' href='/images/avatar.png' />
 
