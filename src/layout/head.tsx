@@ -9,7 +9,7 @@ export default function Head() {
 			<meta name='apple-mobile-web-app-capable' content='yes' />
 			<meta name='apple-mobile-web-app-status-bar-style' content='light-content' />
 			<meta name='apple-mobile-web-app-title' content='Feng' />
-			<link rel='apple-touch-icon' href='/images/avatar.png' />
+			<link rel='apple-touch-icon' href='/favicon.png' />
 
 			<link rel='icon' href='/favicon.png' />
 
