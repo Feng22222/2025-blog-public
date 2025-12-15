@@ -1,8 +1,6 @@
+ 本项目是基于minimalist-web-notepad项目的代码进行二次开发,包含简单txt笔记本、共享文件、图片外链几个功能，你可以将它作为跨设备数据交换的解决方案
+
 # 网页记事本增强版（web-notepad-pro）
-
-  本项目是基于minimalist-web-notepad项目的代码进行二次开发,包含简单txt笔记本、共享文件、图片外链几个功能，你可以将它作为跨设备数据交换的解决方案
-
-## 本项目截图
 
 ![](/blogs/web-notepad-pro/7e8f26b5f386c6ee.png)
 ![](/blogs/web-notepad-pro/98b6ec3f4705ea02.png)
