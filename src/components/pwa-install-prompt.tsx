@@ -91,7 +91,7 @@ export function PwaInstallPrompt() {
   return (
     <AnimatePresence>
       <motion.div
-        className='fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-white rounded-full shadow-xl p-4 flex items-center gap-4 max-w-md'
+        className='fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-white rounded-full shadow-xl p-4 flex flex-row items-center gap-4 max-w-md w-[90%]'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 100 }}
@@ -106,10 +106,10 @@ export function PwaInstallPrompt() {
 
           </div>
         </div>
-        <div className='flex gap-2'>
+        <div className='flex flex-row gap-2 ml-auto'>
           <motion.button
             onClick={handleCloseClick}
-            className='px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-full transition-colors'
+            className='px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-full transition-colors whitespace-nowrap'
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -117,7 +117,7 @@ export function PwaInstallPrompt() {
           </motion.button>
           <motion.button
             onClick={handleInstallClick}
-            className='px-6 py-2 text-sm font-medium text-white bg-brand hover:bg-brand/90 rounded-full transition-colors'
+            className='px-6 py-2 text-sm font-medium text-white bg-brand hover:bg-brand/90 rounded-full transition-colors whitespace-nowrap'
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
