@@ -91,7 +91,7 @@ export function PwaInstallPrompt() {
   return (
     <AnimatePresence>
       <motion.div
-        className='fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-white rounded-full shadow-xl p-4 flex flex-row items-center gap-4 max-w-md w-[90%]'
+        className='fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-[#ffffff0e] backdrop-blur-sm rounded-full shadow-xl p-4 flex flex-row items-center gap-4 max-w-md w-[90%]'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 100 }}
@@ -102,14 +102,14 @@ export function PwaInstallPrompt() {
             <DownloadIcon className='h-6 w-6' />
           </div>
           <div>
-            <p className='font-medium text-gray-900'>安装应用</p>
+            <p className='font-medium text-white'>安装应用</p>
 
           </div>
         </div>
         <div className='flex flex-row gap-2 ml-auto'>
           <motion.button
             onClick={handleCloseClick}
-            className='px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-full transition-colors whitespace-nowrap'
+            className='px-4 py-2 text-sm font-medium text-white hover:bg-white/20 rounded-full transition-colors whitespace-nowrap'
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
