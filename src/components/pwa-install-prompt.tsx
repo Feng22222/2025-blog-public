@@ -103,7 +103,7 @@ export function PwaInstallPrompt() {
           </div>
           <div>
             <p className='font-medium text-gray-900'>安装 Feng 应用</p>
-            <p className='text-sm text-gray-500'>将应用添加到主屏幕，获得更好的体验</p>
+            
           </div>
         </div>
         <div className='flex gap-2'>
