@@ -102,8 +102,8 @@ export function PwaInstallPrompt() {
             <DownloadIcon className='h-6 w-6' />
           </div>
           <div>
-            <p className='font-medium text-gray-900'>安装 Feng 应用</p>
-            
+            <p className='font-medium text-gray-900'>安装应用</p>
+
           </div>
         </div>
         <div className='flex gap-2'>
