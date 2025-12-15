@@ -9,7 +9,7 @@
 
 ## **功能特性**
 
-**在线Demo：**[https://pad.wld.ink](https://pad.wld.ink)
+**在线Demo：**[https://pad.wld.ink](https://pad.wld.ink) 密码：123456
 
 **【界面功能】**<br />基本功能：你的互联网记事本，可以在不同设备中免应用进行文本、图片、文件传输，只需要一个浏览器。<br />笔记：顾名思义，就是单纯的记事本，没有富文本等功能，只是文字记录的一个笔记，您在这里输入的内容将实时保存（除非你的网络十分卡顿或者不可用）。<br />网盘：通过访问file.php进入网盘管理页面，提供文件和文件夹的上传、下载、管理功能。支持文件夹嵌套、文件预览、文件外链等功能，适合跨设备文件传输和共享。<br />  - 支持单个文件最大500M上传<br />  - 支持文件夹上传和嵌套管理<br />  - 支持图片、视频等文件预览<br />  - 支持生成文件下载二维码<br />  - 支持文件夹展开/折叠管理<br />  - 支持文件删除操作
 
@@ -81,3 +81,5 @@ location ~* ^/notes/([a-zA-Z0-9_-]+)$ {
 原项目地址：<br />[https://github.com/pereorga/minimalist-web-notepad](https://github.com/pereorga/minimalist-web-notepad)
 
 原项目地址2：<br />[https://github.com/jocksliu/web-notepad-enhanced](https://github.com/jocksliu/web-notepad-enhanced)
+
+> ⚠️ 内容由AI生成 请仔细甄别
