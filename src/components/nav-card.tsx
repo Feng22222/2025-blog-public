@@ -64,19 +64,36 @@ export default function NavCard() {
 	const center = useCenterStore()
 	const [show, setShow] = useState(false)
 	const { maxSM } = useSize()
-	const [hoveredIndex, setHoveredIndex] = useState<number>(0)
 	const { siteContent, cardStyles } = useConfigStore()
 	const styles = cardStyles.navCard
 	const hiCardStyles = cardStyles.hiCard
 
 	const activeIndex = useMemo(() => {
+		// 主页时不选中任何菜单
+		if (pathname === '/') return undefined
 		const index = list.findIndex(item => pathname === item.href)
 		return index >= 0 ? index : undefined
 	}, [pathname])
 
+	// 在主页时，hoveredIndex初始为-1，不显示任何悬停效果
+	// 在其他页面时，初始化为activeIndex，显示对应菜单项的悬停效果
+	const [hoveredIndex, setHoveredIndex] = useState<number>(() => {
+		if (pathname === '/') return -1
+		return activeIndex || 0
+	})
+
 	useEffect(() => {
 		setShow(true)
 	}, [])
+
+	// 当路径或activeIndex变化时，更新hoveredIndex
+	useEffect(() => {
+		if (pathname === '/') {
+			setHoveredIndex(-1)
+		} else if (activeIndex !== undefined) {
+			setHoveredIndex(activeIndex)
+		}
+	}, [pathname, activeIndex])
 
 	let form = useMemo(() => {
 		if (pathname == '/') return 'full'
@@ -107,13 +124,14 @@ export default function NavCard() {
 	}, [form, styles])
 
 	useEffect(() => {
-		if (form === 'icons' && activeIndex !== undefined && hoveredIndex !== activeIndex) {
+		// 只有在非首页且activeIndex有效的情况下，才自动定位到activeIndex
+		if (pathname !== '/' && form === 'icons' && activeIndex !== undefined && hoveredIndex !== activeIndex) {
 			const timer = setTimeout(() => {
 				setHoveredIndex(activeIndex)
 			}, 1500)
 			return () => clearTimeout(timer)
 		}
-	}, [hoveredIndex, activeIndex, form])
+	}, [hoveredIndex, activeIndex, form, pathname])
 
 	if (maxSM) position = { x: center.x - size.width / 2, y: 16 }
 
@@ -138,40 +156,51 @@ export default function NavCard() {
 							{form !== 'icons' && <div className='text-secondary mt-6 text-sm uppercase'>General</div>}
 
 							<div className={cn('relative mt-2 space-y-2', form === 'icons' && 'mt-0 flex items-center gap-6 space-y-0')}>
-								<motion.div
-									className='absolute max-w-[230px] rounded-full border'
-									layoutId='nav-hover'
-									initial={false}
-									animate={
-										form === 'icons'
-											? {
-													left: hoveredIndex * (itemHeight + 24) - extraSize,
-													top: -extraSize,
-													width: itemHeight + extraSize * 2,
-													height: itemHeight + extraSize * 2
-												}
-											: { top: hoveredIndex * (itemHeight + 8), left: 0, width: '100%', height: itemHeight }
+								{hoveredIndex !== -1 && (
+					<motion.div
+						className='absolute max-w-[230px] rounded-full border'
+						layoutId='nav-hover'
+						initial={false}
+						animate={
+							form === 'icons'
+								? {
+										left: hoveredIndex * (itemHeight + 24) - extraSize,
+										top: -extraSize,
+										width: itemHeight + extraSize * 2,
+										height: itemHeight + extraSize * 2
 									}
-									transition={{
-										type: 'spring',
-										stiffness: 400,
-										damping: 30
-									}}
-									style={{ backgroundImage: 'linear-gradient(to right bottom, var(--color-border) 60%, var(--color-card) 100%)' }}
-								/>
+								: { top: hoveredIndex * (itemHeight + 8), left: 0, width: '100%', height: itemHeight }
+						}
+						transition={{
+							type: 'spring',
+							stiffness: 400,
+							damping: 30
+						}}
+						style={{ backgroundImage: 'linear-gradient(to right bottom, var(--color-border) 60%, var(--color-card) 100%)' }}
+					/>
+				)}
 
-								{list.map((item, index) => (
-									<Link
-										key={item.href}
-										href={item.href}
-										className={cn('text-secondary text-md relative z-10 flex items-center gap-3 rounded-full px-5 py-3', form === 'icons' && 'p-0')}
-										onMouseEnter={() => setHoveredIndex(index)}>
-										<div className='flex h-7 w-7 items-center justify-center'>
-											{hoveredIndex == index ? <item.iconActive className='text-brand absolute h-7 w-7' /> : <item.icon className='absolute h-7 w-7' />}
-										</div>
-										{form !== 'icons' && <span className={clsx(index == hoveredIndex && 'text-primary font-medium')}>{item.label}</span>}
-									</Link>
-								))}
+				{list.map((item, index) => (
+					<Link
+						key={item.href}
+						href={item.href}
+						className={cn('text-secondary text-md relative z-10 flex items-center gap-3 rounded-full px-5 py-3', form === 'icons' && 'p-0')}
+						onMouseEnter={() => setHoveredIndex(index)}
+						onMouseLeave={() => {
+							// 鼠标离开时，如果是在首页，则恢复hoveredIndex为-1
+							if (pathname === '/') {
+								setHoveredIndex(-1)
+							} else if (activeIndex !== undefined) {
+								// 否则恢复到activeIndex
+								setHoveredIndex(activeIndex)
+							}
+						}}>
+						<div className='flex h-7 w-7 items-center justify-center'>
+							{hoveredIndex == index ? <item.iconActive className='text-brand absolute h-7 w-7' /> : <item.icon className='absolute h-7 w-7' />}
+						</div>
+						{form !== 'icons' && <span className={clsx(index == hoveredIndex && 'text-primary font-medium')}>{item.label}</span>}
+					</Link>
+				))}
 							</div>
 						</>
 					)}
