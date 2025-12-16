@@ -1,6 +1,6 @@
 {
-	"short_name": "Feng",
-	"name": "Feng Blog",
+	"short_name": "Blog",
+	"name": "Feng's Blog",
 	"start_url": ".",
 	"display": "standalone",
 	"background_color": "#ffffff",
