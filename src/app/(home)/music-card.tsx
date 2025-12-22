@@ -10,7 +10,7 @@ import PlaySVG from '@/svgs/play.svg'
 import { HomeDraggableLayer } from './home-draggable-layer'
 import { Pause } from 'lucide-react'
 
-const MUSIC_FILES = ['/music/christmas.m4a']
+const MUSIC_FILES = ['/music/Last Christmas Stars-Last Christmas.mp3']
 
 export default function MusicCard() {
 	const center = useCenterStore()
