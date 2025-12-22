@@ -1,61 +1,78 @@
 {
 	"meta": {
-		"title": "Feng's Blog",
-		"description": "Feng的个人博客。",
-		"username": "Feng"
+		"title": "YYsuni",
+		"description": "YYsuni 的个人博客，记录前端开发、探索、笔记。前端 UI 更新代码仓库。",
+		"username": "Suni"
 	},
 	"theme": {
-		"colorBrand": "#2a48f3",
-		"colorPrimary": "#e6e8e8",
-		"colorSecondary": "#acadae",
-		"colorBrandSecondary": "#51d0b9",
-		"colorBg": "#0a051f",
-		"colorBorder": "#8a8a8a5e",
-		"colorCard": "#ffffff0e",
-		"colorArticle": "#6f6f6f33"
+		"colorBrand": "#de4331",
+		"colorPrimary": "#4E3F42",
+		"colorSecondary": "#7b888e",
+		"colorBrandSecondary": "#FCC841",
+		"colorBg": "#eeeeee",
+		"colorBorder": "#ffffff",
+		"colorCard": "#ffffff66",
+		"colorArticle": "#ffffffcc"
 	},
 	"backgroundColors": [
-		"#16007b"
+		"#FCC841",
+		"#DFEFFC",
+		"#DEDE92",
+		"#DE4331",
+		"#FE9750",
+		"#FCC841"
 	],
 	"artImages": [
 		{
-			"id": "35a3751a376b3dbc",
-			"url": "/images/art/35a3751a376b3dbc.png"
+			"id": "cat",
+			"url": "/images/art/cat.png"
 		},
 		{
-			"id": "a641e6da712d0695",
-			"url": "/images/art/a641e6da712d0695.png"
-		},
-		{
-			"id": "1184755adbbc9632",
-			"url": "/images/art/1184755adbbc9632.webp"
+			"id": "a46372ff45bc5524",
+			"url": "/images/art/a46372ff45bc5524.jpg"
 		}
 	],
-	"currentArtImageId": "1184755adbbc9632",
+	"currentArtImageId": "a46372ff45bc5524",
 	"backgroundImages": [
 		{
 			"id": "",
 			"url": ""
-		},
-		{
-			"id": "35a3751a376b3dbc",
-			"url": "/images/background/35a3751a376b3dbc.png"
-		},
-		{
-			"id": "a641e6da712d0695",
-			"url": "/images/background/a641e6da712d0695.png"
-		},
-		{
-			"id": "1184755adbbc9632",
-			"url": "/images/background/1184755adbbc9632.webp"
 		}
 	],
-	"currentBackgroundImageId": "35a3751a376b3dbc",
-	"socialButtons": [],
+	"currentBackgroundImageId": "",
+	"socialButtons": [
+		{
+			"id": "github",
+			"type": "github",
+			"value": "https://github.com/yysuni",
+			"label": "Github",
+			"order": 3
+		},
+		{
+			"id": "juejin",
+			"type": "juejin",
+			"value": "https://juejin.cn/user/2427311675422382",
+			"label": "稀土掘金",
+			"order": 2
+		},
+		{
+			"id": "email",
+			"type": "email",
+			"value": "yysuni1001@gmail.com",
+			"label": "",
+			"order": 1
+		}
+	],
 	"clockShowSeconds": false,
-	"summaryInContent": true,
-	"isCachePem": true,
-	"hideEditButton": true,
-	"currentHatIndex": 24,
-	"hatFlipped": true
+	"summaryInContent": false,
+	"isCachePem": false,
+	"hideEditButton": false,
+	"enableCategories": true,
+	"currentHatIndex": 3,
+	"hatFlipped": false,
+	"enableChristmas": true,
+	"beian": {
+		"text": "",
+		"link": ""
+	}
 }
