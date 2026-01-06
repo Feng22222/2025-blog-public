@@ -1,8 +1,8 @@
 {
 	"meta": {
-		"title": "YYsuni",
-		"description": "YYsuni 的个人博客，记录前端开发、探索、笔记。前端 UI 更新代码仓库。",
-		"username": "Suni"
+		"title": "Feng's Blog",
+		"description": "Feng 的个人博客。",
+		"username": "Feng"
 	},
 	"theme": {
 		"colorBrand": "#de4331",
@@ -24,22 +24,22 @@
 	],
 	"artImages": [
 		{
-			"id": "cat",
-			"url": "/images/art/cat.png"
-		},
-		{
-			"id": "a46372ff45bc5524",
-			"url": "/images/art/a46372ff45bc5524.jpg"
+			"id": "url-1767712284930",
+			"url": "https://pad.wld.ink/_file/20251214-9635.png"
 		}
 	],
-	"currentArtImageId": "a46372ff45bc5524",
+	"currentArtImageId": "url-1767712284930",
 	"backgroundImages": [
 		{
 			"id": "",
 			"url": ""
+		},
+		{
+			"id": "url-1767712287377",
+			"url": "https://pad.wld.ink/_file/20251214-9635.png"
 		}
 	],
-	"currentBackgroundImageId": "",
+	"currentBackgroundImageId": "url-1767712287377",
 	"socialButtons": [
 		{
 			"id": "github",
